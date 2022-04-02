@@ -16,8 +16,56 @@ car le projet a ete fait par nos soins en utilisant Stancl/Tenancy et Spatie/Per
   <li>L'administrateur peut creer des agents(caissier, informaticiens et autres)</li>
   <li>Le caissier creee par l'administrateur peut creer un client, peut recuperer le depot ou le retrait de clients</li>
   <li>Le client peut aussi creer son compte en allant sur mon compte c'est a dire dans ce cas il devra ouvir un compte</li>
+ </ol>
+ <p>
+ <p>
+    <h3 style="color: green">Lancement de l'application</h3>
+    La premiere de chose a faire est de faire les migrations de toutes les tables:
+    ->php artisan migrate
+    ->php artisan tenants:migrate or php artisan tenants:migrate-fresh
+    ->php artisan tenants:seed name_of_the_seend (Dans cette application name_of_the_seed = PermissionRoles)
+   Les etapes suivantes concernent l'appelle du lien d'un locataire.
+ </p>
+ <p>
+    <h3>Different Categories de Customers</h3>
+    <ol>
+    <li>Admin ->Premier utilisateur a se connecter dans le site tenant</li>
+    <li>Caissier -> utilisateur cree par l'administrateur</li>
+    <li>Client simple qui peut etre cree par le caissier ou par lui meme</li>
+    </ol>
+</p>
+## Client
+Le client peut 
+->se connecter
+->modifier son compte
+->faire un virement bancaire
+->verifier son solde
+->consulter ses rapports de transactions
+->voir son profil
 
-## Security Vulnerabilities
+## Caissier
+
+->creer un client seulement
+->recuperer les frais de depot du client
+->recuperer les frais de retrait du client
+->verifier le solde du client
+->recuperer les rapports du client
+->mettre a jour le compte du client
+->verifier le solde de la banque
+->verifier les comptes clients
+## Administrateur
+
+->creer un caissier ou autre agent seulement
+->supprimer, desactiver ou activer un client ou agent
+->verifier le solde de la banque
+->verifier les comptes clients
+<h1>Note:</h1>
+Les roles et permissions sont attribues en suivant la logique ci-haut
+
+## Security Vulnerabilities ou disfonctionnement My Banque Nuru Project
+En cas d'erreur dans nos codes ou en cas de proposition d'ajouts, veuillez le signaler pour nous permettre de nous evaluer sur [genesiskikimba@gmail.com](mailto:genesiskikimba@gmail.com)
+Nous sommes tout ouvert a tout critiques et remarques.
+## Security Vulnerabilities Laravel
 
 If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
