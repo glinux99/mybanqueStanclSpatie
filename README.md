@@ -22,6 +22,14 @@ To launch the customer management application of a bank, in our case it is Nuru 
     <h3 style="color: green">Launching the app</h3>
     The first thing to do is to migrate all the tables:<br>
     ->php artisan migrate<br>
+    ->creation of landlords:
+        <br>&nbsp;&nbsp;Codes<br>
+        ->php artisan tinker<br>
+       &nbsp;&nbsp;&nbsp;&nbsp; Psy Shell v0.11.2 (PHP 7.4.28 — cli) by Justin Hileman
+       &nbsp;&nbsp;&nbsp;&nbsp; >>>$tenant2 = App\Models\Tenant::create(['id' => 'Kinshasa']);<br>
+       &nbsp;&nbsp;&nbsp;&nbsp; >>> $tenant2->domains()->create(['domain' => 'kinsite.nurubanque.cd']);<br>
+       &nbsp;&nbsp;&nbsp;&nbsp; >>> exit<br>
+        &nbsp;&nbsp;&nbsp;&nbsp; You can create as many tenants as you want<br>
     ->php artisan tenants:migrate or php artisan tenants:migrate-fresh
     ->php artisan tenants:seed name_of_the_seend (In this app name_of_the_seed = PermissionRoles)<br>
    The following steps relate to calling a tenant's link.<br>
