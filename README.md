@@ -20,11 +20,11 @@ car le projet a ete fait par nos soins en utilisant Stancl/Tenancy et Spatie/Per
  <p>
  <p>
     <h3 style="color: green">Lancement de l'application</h3>
-    La premiere de chose a faire est de faire les migrations de toutes les tables:
-    ->php artisan migrate
+    La premiere de chose a faire est de faire les migrations de toutes les tables:<br>
+    ->php artisan migrate<br>
     ->php artisan tenants:migrate or php artisan tenants:migrate-fresh
-    ->php artisan tenants:seed name_of_the_seend (Dans cette application name_of_the_seed = PermissionRoles)
-   Les etapes suivantes concernent l'appelle du lien d'un locataire.
+    ->php artisan tenants:seed name_of_the_seend (Dans cette application name_of_the_seed = PermissionRoles)<br>
+   Les etapes suivantes concernent l'appelle du lien d'un locataire.<br>
  </p>
  <p>
     <h3>Different Categories de Customers</h3>
@@ -35,30 +35,30 @@ car le projet a ete fait par nos soins en utilisant Stancl/Tenancy et Spatie/Per
     </ol>
 </p>
 ## Client
-Le client peut 
-->se connecter
-->modifier son compte
-->faire un virement bancaire
-->verifier son solde
-->consulter ses rapports de transactions
-->voir son profil
+Le client peut <br>
+->se connecter<br>
+->modifier son compte<br>
+->faire un virement bancaire<br>
+->verifier son solde<br>
+->consulter ses rapports de transactions<br>
+->voir son profil<br>
 
 ## Caissier
 
-->creer un client seulement
-->recuperer les frais de depot du client
-->recuperer les frais de retrait du client
-->verifier le solde du client
-->recuperer les rapports du client
-->mettre a jour le compte du client
-->verifier le solde de la banque
-->verifier les comptes clients
+->creer un client seulement<br>
+->recuperer les frais de depot du client<br>
+->recuperer les frais de retrait du client<br>
+->verifier le solde du client<br>
+->recuperer les rapports du client<br>
+->mettre a jour le compte du client<<br>br>
+->verifier le solde de la banque<br>
+->verifier les comptes clients<br>
 ## Administrateur
 
-->creer un caissier ou autre agent seulement
-->supprimer, desactiver ou activer un client ou agent
-->verifier le solde de la banque
-->verifier les comptes clients
+->creer un caissier ou autre agent seulement<br>
+->supprimer, desactiver ou activer un client ou agent<br>
+->verifier le solde de la banque<br>
+->verifier les comptes clients<br>
 <h1>Note:</h1>
 Les roles et permissions sont attribues en suivant la logique ci-haut
 
@@ -72,4 +72,3 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# mybanqueStanclSpatie
