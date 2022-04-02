@@ -8,63 +8,63 @@
 </p>
 
 ## ABOUT MY BANK NURU PROJECT 
-Pour lancer l'application de gestions des clients d'une banque, pour notre cas c'est Nuru Banque, il faudra d'abord configurer les locataires
-car le projet a ete fait par nos soins en utilisant Stancl/Tenancy et Spatie/Permissions qui nous ont aide a generer les locataires ainsi que les permissions et roles pour les utilisateurs:
-<p><h3>A savoir</h3>
+<h4 style="background: black">->PROJET EN MULTI LANGUES / PROJECT IN MULTI LANGUAGES</h4>
+To launch the customer management application of a bank, in our case it is Nuru Bank, you will first have to configure the tenants  because the project was done by us using Stancl/Tenancy and Spatie/Permissions which helped us to generate the tenants as well as the permissions and roles for the users:
+<p><h3>Know this</h3>
 <ol>
-  <li>Le premier client devient l'administrateur du site</li>
-  <li>L'administrateur peut creer des agents(caissier, informaticiens et autres)</li>
-  <li>Le caissier creee par l'administrateur peut creer un client, peut recuperer le depot ou le retrait de clients</li>
-  <li>Le client peut aussi creer son compte en allant sur mon compte c'est a dire dans ce cas il devra ouvir un compte</li>
+  <li>The first customer becomes the site administrator</li>
+  <li>The administrator can create agents (cashier, IT and others)</li>
+  <li>The cashier created by the administrator can create a customer, can recover the deposit or the withdrawal of customers</li>
+  <li>The customer can also create his account by going to my account, i.e. in this case he will have to open an account</li>
  </ol>
  <p>
  <p>
-    <h3 style="color: green">Lancement de l'application</h3>
-    La premiere de chose a faire est de faire les migrations de toutes les tables:<br>
+    <h3 style="color: green">Launching the app</h3>
+    The first thing to do is to migrate all the tables:<br>
     ->php artisan migrate<br>
     ->php artisan tenants:migrate or php artisan tenants:migrate-fresh
-    ->php artisan tenants:seed name_of_the_seend (Dans cette application name_of_the_seed = PermissionRoles)<br>
-   Les etapes suivantes concernent l'appelle du lien d'un locataire.<br>
+    ->php artisan tenants:seed name_of_the_seend (In this app name_of_the_seed = PermissionRoles)<br>
+   The following steps relate to calling a tenant's link.<br>
  </p>
  <p>
-    <h3>Different Categories de Customers</h3>
+    <h3>Different categories of customers</h3>
     <ol>
-    <li>Admin ->Premier utilisateur a se connecter dans le site tenant</li>
-    <li>Caissier -> utilisateur cree par l'administrateur</li>
-    <li>Client simple qui peut etre cree par le caissier ou par lui meme</li>
+    <li>Admin ->First user to log into the tenant site</li>
+    <li>Cashier -> user created by the administrator</li>
+    <li>Simple client that can be created by the cashier or by himself</li>
     </ol>
 </p>
-## Client
-Le client peut <br>
-->se connecter<br>
-->modifier son compte<br>
-->faire un virement bancaire<br>
-->verifier son solde<br>
-->consulter ses rapports de transactions<br>
-->voir son profil<br>
+## The customer
+The customer can <br>
+->to log in<br>
+->modify your account<br>
+->make a bank transfer<br>
+->check your balance<br>
+->view transaction reports<br>
+->see his profile<br>
 
-## Caissier
+## Cashier
 
-->creer un client seulement<br>
-->recuperer les frais de depot du client<br>
-->recuperer les frais de retrait du client<br>
-->verifier le solde du client<br>
-->recuperer les rapports du client<br>
-->mettre a jour le compte du client<<br>br>
-->verifier le solde de la banque<br>
-->verifier les comptes clients<br>
-## Administrateur
+->create a customer only<br>
+->recover the client's deposit fees<br>
+->recover customer withdrawal fees<br>
+->check customer balance<br>
+->collect customer reports<br>
+->update customer account<br>
+->check bank balance<br>
+->verify customer accounts<br>
+## Administrator
 
-->creer un caissier ou autre agent seulement<br>
-->supprimer, desactiver ou activer un client ou agent<br>
-->verifier le solde de la banque<br>
-->verifier les comptes clients<br>
+->create a cashier or other agent only<br>
+->delete, deactivate or activate a customer or agent<br>
+->check bank balance<br>
+->verify customer accounts<br>
 <h1>Note:</h1>
-Les roles et permissions sont attribues en suivant la logique ci-haut
+Roles and permissions are assigned following the above logic
 
-## Security Vulnerabilities ou disfonctionnement My Banque Nuru Project
-En cas d'erreur dans nos codes ou en cas de proposition d'ajouts, veuillez le signaler pour nous permettre de nous evaluer sur [genesiskikimba@gmail.com](mailto:genesiskikimba@gmail.com)
-Nous sommes tout ouvert a tout critiques et remarques.
+## Security Vulnerabilities ou dysfonctionnement My Banque Nuru Project
+In case of error in our codes or in case of proposed additions, please report it to allow us to evaluate ourselves on [genesiskikimba@gmail.com](mailto:genesiskikimba@gmail.com)
+We are open to all criticism and remarks.
 ## Security Vulnerabilities Laravel
 
 If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
