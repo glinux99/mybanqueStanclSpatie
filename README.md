@@ -25,7 +25,7 @@ To launch the customer management application of a bank, in our case it is Nuru 
     ->creation of landlords:
         <br>&nbsp;&nbsp;Codes<br>
         ->php artisan tinker<br>
-       &nbsp;&nbsp;&nbsp;&nbsp; Psy Shell v0.11.2 (PHP 7.4.28 — cli) by Justin Hileman
+       &nbsp;&nbsp;&nbsp;&nbsp; Psy Shell v0.11.2 (PHP 7.4.28 — cli) by Justin Hileman<br>
        &nbsp;&nbsp;&nbsp;&nbsp; >>>$tenant2 = App\Models\Tenant::create(['id' => 'Kinshasa']);<br>
        &nbsp;&nbsp;&nbsp;&nbsp; >>> $tenant2->domains()->create(['domain' => 'kinsite.nurubanque.cd']);<br>
        &nbsp;&nbsp;&nbsp;&nbsp; >>> exit<br>
